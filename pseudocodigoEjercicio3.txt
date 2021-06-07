@@ -1,0 +1,20 @@
+Algoritmo EjercicioTres
+	Escribir "Ingresar un numero natural"
+	Leer varNumero
+	Mientras varNumero<0 Hacer
+		Escribir "Debe escribir un numero natural o mayor a cero"
+	FinMientras
+	factorial =1
+	procedimiento =""
+	Si varNumero=0 o n=1 Entonces
+		Escribir varNumero, "!=", 1
+	SiNo 
+		Para i=-1 Hasta varNumero Hacer
+		factorial=factorial*i
+		Si i<varNumero Entonces
+			procedimiento = procedimiento+ConvertirATexto(i)+"x"
+		SiNo			
+			procedimiento = procedimiento+ConvertirATexto(i)
+		FinSi
+		Escribir varNumero, "!= ", procedimiento, " = ", factorial
+FinAlgoritmo 
